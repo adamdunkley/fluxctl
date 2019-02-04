@@ -9,7 +9,7 @@ VERSION=$1
 
 docker build --no-cache --build-arg version=$VERSION -t local/fluxctl .
 
-docker tag local/fluxctl rholcombe/fluxctl:v$VERSION
-docker push rholcombe/fluxctl:v$VERSION
-docker tag local/fluxctl rholcombe/fluxctl:latest
-docker push rholcombe/fluxctl:latest
+docker tag local/fluxctl adamdunkley/fluxctl:v$VERSION
+docker push adamdunkley/fluxctl:v$VERSION
+docker tag local/fluxctl adamdunkley/fluxctl:latest
+docker push adamdunkley/fluxctl:latest
